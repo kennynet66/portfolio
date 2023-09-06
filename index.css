@@ -12,8 +12,9 @@ body {
 
 /* The navigation bar with the Title portfolio*/
 .nav {
-    color: white;
+    padding: 1px;
     text-align: center;
+    color: white;
     background-color: red;
 }
 
@@ -26,7 +27,7 @@ body {
     border: none;
     background-color: teal;
     color: white;
-    margin-top: 1%;
+    margin-top: 2%;
     margin-right: 1%;
     animation-name: example;
     animation-duration: 4s;
@@ -68,7 +69,7 @@ body {
     color: white;
     margin-left: 20%;
     height: 100%;
-    position: fixed;
+    position: absolute;
     overflow: auto;
 }
 
