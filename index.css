@@ -1,186 +1,66 @@
-/* To allow for usage of columns */
-* {
-    box-sizing: border-box;
-}
+
 /* Styling the general backgrounc view of ths page */
 body {
-    background-image: url('https://media.istockphoto.com/id/1285395672/photo/abstract-futuristic-with-connection-lines-on-blue-background-plexus-structure-concept-of.jpg?b=1&s=612x612&w=0&k=20&c=AZwPyEY1H04PwBLvEIR8khtLRA-RzozIm5OeIPgQJRY=');
+    background-image: url('https://images.pexels.com/photos/15211341/pexels-photo-15211341/free-photo-of-meteor-shower-above-lake-shore.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
-/* The navigation bar with the Title portfolio*/
 .nav {
-    padding: 1px;
-    text-align: center;
-    color: white;
-    background-color: red;
-}
-
-/* The button to display the Resume */
-.CV_butn
-{
-    float: right;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    background-color: teal;
-    color: white;
     margin-top: 2%;
-    margin-right: 1%;
-    animation-name: example;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+}
+
+a.Rest {
     text-decoration: none;
-}
-
-/* Animations to the button */
-@keyframes example {
-    0%   {background-color:rgb(5, 186, 186); left:0px; top:0px;}
-    50%  {background-color:rgb(12, 110, 110); left:200px; top:200px;}
-    75%  {background-color:rgb(2, 72, 72); left:0px; top:200px;}
-    100% {background-color:rgb(2, 55, 55); left:0px; top:0px;}
-}
-
-/* Styling for the left column containing the profile picture and personal details */
-.menu {
-    width: 20%;
-    float: left;
-    padding: 15px;
+    color: #000;
+    border: 2px solid #f2f2f2;
+    padding: 10px;
+    border-radius: 10px;
     color: white;
-    height: 100%;
-    position: fixed;
-    overflow: auto;
-}
-/* The profile picture */
-.profile_pic {
-    border-radius: 100%;
-    height: 30%;
-    width: 80%;
+    margin: 2px;
 }
 
-/* Styling for the central column */
-.main {
-    text-align: center;
-    width: 60%;
-    float: left;
-    padding: 15px;
-    color: white;
-    margin-left: 20%;
-    height: 100%;
+a.Rest:hover {
+    color: #000;
+    background-color: papayawhip;
+    border-color: #fff;
+    text-transform: uppercase;
+}
+
+.Text {
     position: absolute;
-    overflow: auto;
-}
-
-/* styling for the right(about) column */
-.about {
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
     text-align: center;
-    width: 20%;
-    float: left;
-    padding: 15px;
+}
+
+a.rest {
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #f2f2f2;
+    padding: 10px;
+    border-radius: 10px;
     color: white;
-    margin-left: 80%;
-    height: 100%;
+}
+a.rest:hover {
+    color: #000;
+    background-color: #fff;
+    border-color: #000;
+}
+
+.button:hover {
+    background-color: #000;
+}
+
+.footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
     position: fixed;
-    overflow: auto;
-}
-
-.details_heading {
-    padding: 5px;
-    background-color: orange;
-    border-radius: 5px;
-    width: 80%;
-}
-
-li {
-    font-size: larger;
-}
-
-h1 {
-    width: 100%;
-    padding:10px;
-    border-radius: 10px;
-}
-
-/* card holding the project title and details */
-.card {
-    background-color: aliceblue;
-    color: black;
-    padding: 50px;
-    border-radius: 10px;
-    margin-top: 10%;
-}
-
-/* Styling for the project images */
-.project_img
-{
-    border-radius: 10px;
-    height: 100%;
-    width: 90%;
-    transition: 0.4s;
-}
-
-/* Styling for the project images when hovered */
-.project_img:hover{
-    border-radius: 20px;
-    width: 100%;
-}
-
-/* media query for devicex with a width of 900px */
-@media(max-width:900px)
-{
-    .menu {
-        display: none;
-    }
-    .menu-toggle {
-        cursor: pointer;
-    }
-    .main {
-        text-align: center;
-        margin-left: 0%;
-        font-size: 14px;
-    }
-    .about {
-        width: 40%;
-        margin-left: 60%;
-    }
-    .project_img {
-        height: 100%;
-        width: 90%;
-    }
-    .project_img:hover {
-        height: 100%;
-        width: 100%;
-    }
-}
-
-/* media query for devices with a width of 1024px */
-@media (max-width:1024px)
-{
-    .profile_pic{
-        width: auto;
-        height: 20%;
-    }
-    .menu {
-        font-size: small;
-    }
-    h1 {
-        width: 80%;
-    }
-    h3 {
-        width: 80%;
-    }
-}
-
-/* media query for devices with a width of 600px */
-@media(max-width: 600px)
-{
-    .about {
-        display: none;
-    }
-
-    .main {
-        width: 100%;
-    }
+    text-align: center;
+    background-color: #dbd7d7;
+    border-top: 2px solid #000;
 }

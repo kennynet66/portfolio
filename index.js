@@ -1,11 +1,8 @@
-const menuToggle = document.getElementById('menuToggle');
-const menu = document.getElementById('menu')
-
-menuToggle.addEventListener('click', () => {
-    if (menu.style.display === 'block')
-    {
-        menu.style.display = 'none';
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
     } else {
-        menu.style.display = 'block';
+      x.style.display = "block";
     }
-});
+  }
