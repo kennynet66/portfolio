@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "## Description",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/kennynet66/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kennynet66/portfolio/issues"
+  },
+  "homepage": "https://github.com/kennynet66/portfolio#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

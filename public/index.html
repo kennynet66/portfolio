@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="nav">
+        <a class="Rest" href="index.html">Home</a>
+        <button class="Rest" onclick="openPopup()">About Me</button>
+        <a href="Kenedy_Maina.pdf" target="_blank"><button class="Rest">Resume</button></a>
+    </div>
+
+    <div class="Text">
+        <p class="one" style="color: white;">Hello, My name is </p>
+        <b><h1 style = "color:papayawhip;">Kenedy Maina</h1></b>
+        <a  class="rest" href="work.html">view my work</a>
+    </div>
+
+    <div class="popup home" id="popup">
+        <img src="profile.jpeg" alt="A photo of me" height="100%" width="100%">
+        <h2>About Me</h2>
+        <p>
+    My name is Kenedy Maina. I am a back-end developer with over ten thousand hours of experience.
+    I have specialised in programming languages such as C, Python, scripting, HTML, CSS, Bootstrap and used
+    various frameworks and tools such as Node.js, express.js, Git, MongoDb & MySql
+        </p>
+        <h4>Contact</h4>
+        <ul>
+            <li>Email: kenedymaina634@gmail.com</li>
+            <li>Github: @kennynet66</li>
+            <li>Phone: +254 708 530 896</li>
+        </ul>
+        <button type="button" onclick="closePopup()">Close</button>
+    </div>
+
+    <script>
+        let popup = document.getElementById("popup");
+
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+</body>
+</html>

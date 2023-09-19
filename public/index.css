@@ -1,0 +1,456 @@
+::-webkit-scrollbar{
+    display: none;
+}
+/* Styling the general backgrounc view of ths page */
+body {
+    background-image: url('https://images.pexels.com/photos/15211341/pexels-photo-15211341/free-photo-of-meteor-shower-above-lake-shore.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: scroll;
+}
+nav {
+    margin-top: 2%;
+}
+
+a.Rest {
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #f2f2f2;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    margin: 2px;
+}
+
+a.Rest:hover {
+    color: #000;
+    background-color: papayawhip;
+    border-color: #fff;
+    text-transform: uppercase;
+}
+
+.Text {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    text-align: center;
+    font-size: 40px;
+}
+.one {
+    font-size:large;
+}
+a.rest {
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #f2f2f2;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: large;
+}
+a.rest:hover {
+    color: #000;
+    background-color: #fff;
+    border-color: #000;
+}
+
+.button:hover {
+    background-color: #000;
+}
+
+.footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    position: static;
+    text-align: center;
+    background-color: #dbd7d7;
+    border-top: 2px solid #000;
+    margin-top: 6%;
+}
+.nav{
+    margin-top: 20px;
+}
+a.Rest {
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #f2f2f2;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    margin: 2px;
+}
+
+a.Rest:hover {
+    color: #000;
+    background-color: papayawhip;
+    border-color: #fff;
+    text-transform: uppercase;
+}
+
+
+.search_div{
+    margin-left: 30%;
+    margin-top: 2%;
+}
+.search {
+    padding: 8px;
+    width: 40%;
+    border: 2px solid #f2f2f2;
+    color: #fff;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.search_button{
+    padding: 8px;
+    width: 10%;
+    border-radius: 10px;
+    border: none;
+    border: 2px solid #f2f2f2;
+    color: #fff;
+    background-color: transparent;
+}
+
+.search_button:hover {
+    background-color: #000;
+    border: 2px solid #000;
+}
+
+::placeholder{
+    color: #dbd7d7;
+    font-size: 14px;
+}
+
+button.Rest {
+    background-color: transparent;
+    padding: 10px;
+    border: 2px solid #fff;
+    color: white;
+    float: right;
+    margin: 2px;
+    border-radius: 6px;
+}
+
+button.Rest:hover {
+    background-color: papayawhip;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.popup {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.close-popup{
+    transform: translate(-50%, -50% ) scale(0.1);
+    bottom: 0%;
+    visibility: hidden;
+}
+
+.popup img {
+    width: 100px;
+    background-color: #fff;
+    margin-top: -50px;
+    border-radius: 100%;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+}
+
+.popup h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color:  #d9534f;
+    color: white;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.3);
+}
+
+.ret_div {
+    margin-top: 2%;
+    position: relative;
+}
+
+.return {
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #f2f2f2;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    margin: 2p;
+}
+
+.return:hover {
+    color: #000;
+    background-color: papayawhip;
+    border-color: #fff;
+    text-transform: uppercase;   
+}
+
+.search_results {
+    padding: 25px;
+    width: 24%;
+    background-color: #fff;
+    border-radius: 6px;
+    top: 15%;
+    left: 45%;
+    position: absolute;
+    transform: translate(-50%, -50%)scale(0.1);
+    transition: transform 0.4s, top 0.4s;
+    visibility: hidden;
+}
+
+.open-search {
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
+    top: 29%;
+}
+
+.project {
+    margin-top: 10px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.3);
+    background-color: #fff;
+    top: 50%;
+    margin-left: 5%;;
+    margin-right: 5%;
+    height: max-content;
+    overflow: scroll;
+}
+
+.project h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #000;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #dbd7d7;
+    width: 43%;
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0px 10px 5px rgba(0,0,0,0.3);
+}
+
+.card ul {
+    text-align: left;
+}
+
+.git {
+    padding: 10px;
+    float:left;
+    background-color: rgb(61, 236, 61);
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    width:90%;
+    font-size: 18px;
+    margin: 2%;
+}
+.git:hover{
+    background-color: rgb(47, 209, 47);
+}
+.puddleicon {
+    background-color: #fff;
+    border-radius: 20%;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.3);
+}
+
+.puddleicon:hover {
+    background-color: #000;
+    border-radius: 80%;
+    box-shadow: 0px 10px 5px rgba(0,0,0,0.3);
+}
+
+.cicon {
+    background-color: white;
+    border-radius: 20%;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.3);
+    padding: 5px;
+}
+
+.cicon:hover {
+    background-color: #000;
+    border-radius: 80%;
+    box-shadow: 0px 10px 5px rgba(0,0,0,0.3);
+}
+
+.maringoico {
+    background-color: #fff;
+    border-radius: 20%;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.3);
+}
+
+.maringoico:hover {
+    background-color: #000;
+    border-radius: 80%;
+    box-shadow: 0px 10px 5px rgba(0,0,0,0.3);
+}
+
+.popup ul {
+    text-align: left;
+}
+
+.serverico {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px rgba(196, 125, 125, 0.3);
+    padding: 5px;
+}
+
+.serverico:hover {
+    background-color: #000;
+    border-radius: 80%;
+    box-shadow: 0px 10px 5px rgba(0,0,0,0.3)
+}
+
+@media (max-width: 905px)
+{
+    .project{
+        text-align: center;
+    }
+    .card{
+        width: 90%;
+    }
+    .search_button{
+        width: 100px;
+        margin: 2px;
+    }
+    .search{
+        width: 60%;
+    }
+    .popup{
+        width: 50%;
+        background-color: #dbd7d7;
+    }
+    .popup img {
+        padding: 1px;
+        background-color: #dbd7d7;
+    }
+    .Text h1 {
+        font-size: 40px;
+    }
+    .Text p {
+        font-size: 20px;
+    }
+    .popup.home {
+        width: 60%;
+        background-color: #fff;
+    }
+}
+
+@media (max-width: 300px)
+{
+    .popup.home {
+        width: 50%;
+        height: 50%;
+    }
+    .popup.home img {
+        height: 20%;
+        width:30%;
+        border-radius: 10px;
+    }
+    .popup.home h2 {
+        color:red;
+        font-size: 18px;
+    }
+    .popup.home p {
+        font-size: 8px;
+    }
+    .popup.home ul{
+        font-size: 8px;
+        text-align: left;
+        margin-left: -20%;
+    }
+    .popup.home h4 {
+        font-size: 12px;
+    }
+    .popup.home button {
+        padding: 10px;
+        font-size: 8px;
+        margin-top: 2%;
+    }
+    .nav button {
+        padding: 5px;
+    }
+    .project {
+        background-color: transparent;
+    }
+    .project h1 {
+        color: #fff;
+        font-size: 20px;
+    }
+    .card {
+        font-size: 8px;
+        transform: translate(-5%, 5%);
+    }
+    .ret_div {
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+    .ret_div a {
+        padding: 5px;
+        font-size: 10px;
+        transform: translate(-5%, 50%);
+    }
+    .search_div{
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+    .search_div input{
+        padding: 2px;
+    }
+    ::placeholder {
+        font-size: 8px;
+    }
+    .search_div button {
+        padding: 4px;
+        width: 50px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1000px)
+{
+    .card{
+        margin: 5px;
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My work</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="ret_div">
+        <a class="return" href="index.html">Home</a>
+    </div>
+    <div class="search_div">
+        <input type="text" class="search" onclick="openSearch()" placeholder="Find...">
+        <button class="search_button" type="submit" onclick="openPopup()">Find</button>
+    </div>
+
+
+    <div class="popup" id="popup">
+        <img src="coming.png" height="50%" width="50%">
+        <h1> Coming soon</h1>
+        <button type="button" onclick="closePopup()">Close</button>
+     </div>
+
+    <div class="search_results" id="search_results">
+        <h2> Search results</h2>
+        <hr>
+        <p> Search will be improved in later versions</p>
+    </div>
+
+    <!-- Project code -->
+    <div class="project">
+        <h1>All projects</h1>
+
+        <!-- The c header project -->
+        <div class="card 1">
+            <h2>C Header project</h2><hr>
+            <p> This is a project that mimics some of the c builtin functions. The project is 
+                crucial in practicing low level programming and gives experience in understanding
+                of the memory in depth. It also gives experience in memory and data manipulation skills 
+            </p>
+            <h4>some of the functions include</h4>
+            <ul>
+                <li>strcpy & strncpy</li>
+                <li>strlen</li>
+                <li>strcat & strncat</li>
+                <li>putchar</li>
+                <li>puts</li>
+            </ul>
+        <div class="project_icon">
+             <img src="c.png" alt="c icon" class="cicon" height="12%" width="12%">
+        </div>
+        <p>You can view the project and learn more about it in my github account</p>
+        <a href="https://github.com" target="_blank" class="git">Github</a>
+        </div>
+
+        <!-- Puddle project -->
+        <div class="card 2">
+            <h2>Puddle</h2> <hr>
+            <p>This is a marketplace project that utilises the Django framework(Python). It allows for users to 
+                buy and sell goods and services, advertise their products, communicate with consumers, make feedbacks
+                and manage products in the market
+            </p>
+            <h4>It has the following features</h4>
+            <ul>
+                <li>Seller/Admin interface</li>
+                <li>Customer/buyer interface</li>
+                <li>Basket feature</li>
+                <li>Stock Management feature</li>
+                <li>Profit & loss calculator</li>
+            </ul>
+            <div class="project_icon">
+                <img src="puddle.png" alt="puddle icon" class="puddleicon" height="30%" width="20%">
+            </div>
+            <p>You can view the project and learn more about it in my github account</p>
+            <a href="https://github.com" target="_blank" class="git">Github</a>
+        </div>
+
+        <!-- Maringo sports club system -->
+        <div class="card 3">
+            <h2>Sports club system</h2><hr>
+            <p> This is a coach assistant project that helps team coaches manage their players, manage 
+                new members create sports groups and manage sports events. This project can be useful
+                in real time as the idea is gotten from real time situations.
+            </p>
+            <h4> It has the following features</h4>
+            <ul>
+                <li>New user registration</li>
+                <li>User deletion feature</li>
+                <li>Event manager</li>
+                <li>An admin interface to manage the data</li>
+                <li>Connected to a realtime Database(MongoDb)</li>
+            </ul>
+            <div class="project_icon">
+                <img src="maringo.png" alt="sports club icon" class="maringoico" height="70px" width="100px">
+            </div>
+            <p>You can view the project and learn more about it in my github account</p>
+            <a href="https://github.com" target="_blank" class="git">Github</a>
+        </div>
+        <div class="card 4">
+            <h2>Simple server</h2><hr>
+            <p> This simple project involves creating a simple server using frameworks such as express js
+                and node js. The project also utilises some program packages such as nodemon and MongoDb.
+                The project is a good start to practice serving.
+            </p>
+            <h4>It has the following features</h4>
+            <ul>
+                <li>It utilises nodemon to easily refresh the server</li>
+                <li>Serves static files</li>
+                <li>Stores in a database(MongoDb)</li>
+                <li>Handles all errors</li>
+                <li>Handles Authentications</li>
+            </ul>
+            <div class="project_icon">
+                <img src="server.png" alt="Server image" class="serverico" width="15%" height="15%">
+            </div>
+            <p>You can view the project and learn more about it in my github account</p>
+            <a href="https://github.com" target="_blank" class="git">Github</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer">
+        <p><b> Connect with me on</b></p>
+        <p> <b>Email:</b> <a href="mailto:kenedymaina634@gmail.com" target="_blank">kenedymaina634@gmail.com</a></p>
+        <p> <b>Phone:</b> +254 708 530 896</p>
+        <p> <b>Github:</b> <a href="https://github.com/kennynet66" target="_blank">@kennynet66</a></p>
+    </div>
+    <!-- script for the popup -->
+    <script>
+        let popup = document.getElementById("popup");
+
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+
+    <script>
+        let openSearch = document.getElementById("search_results");
+
+        function openSearch(){
+            openSearch.classList.add("open-search");
+        }
+    </script>
+
+</body>
+</html>
