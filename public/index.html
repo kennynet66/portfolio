@@ -6,7 +6,7 @@
     <title>Homepage</title>
     <link rel="stylesheet" href="index.css">
 </head>
-<body>
+<body id="bodyCont" class="bodyCont">
     <div class="nav">
         <a class="Rest" href="index.html">Home</a>
         <button class="Rest" onclick="openPopup()">About Me</button>
@@ -20,31 +20,38 @@
     </div>
 
     <div class="popup home" id="popup">
-        <img src="profile.jpeg" alt="A photo of me" height="100%" width="100%">
+        <img class="close" src="istockphoto-857112152-612x612-removebg-preview.png" onclick="closePopup()">
+        <img class="profile" src="profile.jpeg" alt="A photo of me" height="100%" width="100%">
         <h2>About Me</h2>
         <p>
     My name is Kenedy Maina. I am a back-end developer with over ten thousand hours of experience.
     I have specialised in programming languages such as C, Python, scripting, HTML, CSS, Bootstrap and used
     various frameworks and tools such as Node.js, express.js, Git, MongoDb & MySql
         </p>
-        <h4>Contact</h4>
+        <h4>Contact Me</h4>
         <ul>
             <li>Email: kenedymaina634@gmail.com</li>
             <li>Github: @kennynet66</li>
             <li>Phone: +254 708 530 896</li>
         </ul>
-        <button type="button" onclick="closePopup()">Close</button>
     </div>
 
     <script>
         let popup = document.getElementById("popup");
+        let body = document.getElementById("bodyCont");
 
         function openPopup(){
             popup.classList.add("open-popup");
+
+            if(popup){
+                body.style.filter = "blur(5px)"
+            }
         }
         function closePopup(){
             popup.classList.remove("open-popup");
+                body.style.filter = "none"
         }
     </script>
+    
 </body>
 </html>
