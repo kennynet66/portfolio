@@ -1,44 +1,53 @@
 ::-webkit-scrollbar{
     display: none;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* Styling the general backgrounc view of ths page */
 body{
-    background-image: url('https://images.pexels.com/photos/15211341/pexels-photo-15211341/free-photo-of-meteor-shower-above-lake-shore.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-image: url('https://images.unsplash.com/photo-1480506132288-68f7705954bd?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     overflow: scroll;
 }
 
-nav {
-    margin-top: 2%;
+.nav {
+    background-color: #a7a2a29f;
+    padding: 30px;
+    position: fixed;
+    width: 100%;
 }
 
-a.Rest {
+.nav a{
+    background-color: #ffffff9f;
     text-decoration: none;
     color: #000;
     border: 2px solid #f2f2f2;
     padding: 10px;
     border-radius: 10px;
     color: white;
-    margin: 2px;
+    margin: 5px;
 }
 
-a.Rest:hover {
+.nav a:hover {
     color: #000;
-    background-color: papayawhip;
+    background-color: #ffffffc4;
     border-color: #fff;
-    text-transform: uppercase;
 }
 
 .Text {
     position: absolute;
-    top: 35%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
     text-align: center;
     font-size: 40px;
+    width: 90%;
 }
 .one {
     font-size:large;
@@ -73,26 +82,6 @@ a.rest:hover {
     border-top: 2px solid #000;
     margin-top: 6%;
 }
-.nav{
-    margin-top: 20px;
-}
-a.Rest {
-    text-decoration: none;
-    color: #000;
-    border: 2px solid #f2f2f2;
-    padding: 10px;
-    border-radius: 10px;
-    color: white;
-    margin: 2px;
-}
-
-a.Rest:hover {
-    color: #000;
-    background-color: papayawhip;
-    border-color: #fff;
-    text-transform: uppercase;
-}
-
 
 .search_div{
     margin-left: 30%;
@@ -147,7 +136,6 @@ button.Rest:hover {
     width: 400px;
     background-color: #fff;
     border-radius: 6px;
-    border: 1px solid #000;
     position: absolute;
     top: 0;
     left: 50%;
@@ -157,6 +145,7 @@ button.Rest:hover {
     color: #333;
     visibility: hidden;
     transition: transform 0.4s, top 0.4s;
+    box-shadow: -5px -5px 30px 5px #5f5e5e;
 }
 
 .open-popup{
