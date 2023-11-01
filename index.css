@@ -49,21 +49,21 @@ body{
     width: 90%;
 }
 .one {
-    font-size:large;
+    font-size:30px;
 }
 a.rest {
+    background-color: #ffffff9f;
     text-decoration: none;
-    color: #000;
     border: 2px solid #f2f2f2;
     padding: 10px;
     border-radius: 10px;
-    color: white;
+    color: #000;
     font-size: large;
 }
 a.rest:hover {
     color: #000;
-    background-color: #fff;
-    border-color: #000;
+    background-color: #ffffffc4;
+    border-color: #fff;
 }
 
 .button:hover {
@@ -80,7 +80,16 @@ a.rest:hover {
     background-color: #dbd7d7;
     border-top: 2px solid #000;
     margin-top: 6%;
-    padding: 30px;
+    padding: 20px;
+}
+
+.footer_det {
+    padding: 10px;
+}
+
+.footer_det h1,p,a{
+    margin: 2px;
+    color: #000;
 }
 
 .search_div{
