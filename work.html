@@ -3,30 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>My work</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="ret_div">
+    <!-- <div class="ret_div">
         <a class="return" href="index.html">Home</a>
-    </div>
-    <div class="search_div">
-        <input type="text" class="search" onclick="openSearch()" placeholder="Find...">
-        <button class="search_button" type="submit" onclick="openPopup()">Find</button>
-    </div>
-
-
-    <div class="popup" id="popup">
-        <h1> Coming soon</h1>
-        <button type="button" onclick="closePopup()">Close</button>
-     </div>
-
-    <div class="search_results" id="search_results">
-        <h2> Search results</h2>
-        <hr>
-        <p> Search will be improved in later versions</p>
+    </div> -->
+    <div class="nav">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="#" onclick="openPopup()"><i class="fa-regular fa-face-smile"></i> About Me</a>
+        <a href="Kenedy_Maina.pdf" target="_blank"><i class="fa-regular fa-file-pdf"></i> Resume</a>
     </div>
 
+    <div class="popup home" id="popup">
+        <img class="close" src="istockphoto-857112152-612x612-removebg-preview.png" onclick="closePopup()">
+        <img class="profile" src="profile.jpeg" alt="A photo of me" height="100%" width="100%">
+        <h2>About Me</h2>
+        <p>
+    My name is Kenedy Maina. I am a back-end developer with over ten thousand hours of experience.
+    I have specialised in programming languages such as C, Python, scripting, HTML, CSS, Bootstrap and used
+    various frameworks and tools such as Node.js, express.js, Git, MongoDb & MySql
+        </p>
+        <h4>Contact Me</h4>
+        <ul>
+            <li>Email: kenedymaina634@gmail.com</li>
+            <li>Github: @kennynet66</li>
+            <li>Phone: +254 708 530 896</li>
+        </ul>
+    </div>
     <!-- Project code -->
     <div class="project">
         <h1>All projects</h1>
@@ -127,22 +133,16 @@
         <p> <b>Github:</b> <a href="https://github.com/kennynet66" target="_blank">@kennynet66</a></p>
     </div>
     <!-- script for the popup -->
+    
     <script>
         let popup = document.getElementById("popup");
+        let body = document.getElementById("bodyCont");
 
         function openPopup(){
             popup.classList.add("open-popup");
         }
         function closePopup(){
             popup.classList.remove("open-popup");
-        }
-    </script>
-
-    <script>
-        let openSearch = document.getElementById("search_results");
-
-        function openSearch(){
-            openSearch.classList.add("open-search");
         }
     </script>
 
