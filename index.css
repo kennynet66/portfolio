@@ -1,12 +1,9 @@
-::-webkit-scrollbar{
-    display: none;
-}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* Styling the general backgrounc view of ths page */
+/* Styling the general background view of ths page */
 body{
     background-image: url('https://images.unsplash.com/photo-1480506132288-68f7705954bd?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D');
     background-repeat: no-repeat;
@@ -14,6 +11,11 @@ body{
     background-attachment: fixed;
     overflow: scroll;
 }
+
+ul {
+    list-style-type: none;
+}
+
 
 .nav {
     background-color: #a7a2a29f;
@@ -31,11 +33,18 @@ body{
     color: white;
     margin: 5px;
 }
-
 .nav a:hover {
     color: #000;
     background-color: #ffffffc4;
     border-color: #fff;
+}
+
+.nav-elements {
+    display: flex;
+}
+
+.hamburger {
+    display: none;
 }
 
 .Text {
@@ -47,9 +56,6 @@ body{
     text-align: center;
     font-size: 40px;
     width: 90%;
-}
-.one {
-    font-size:30px;
 }
 a.rest {
     background-color: #ffffff9f;
@@ -66,9 +72,6 @@ a.rest:hover {
     border-color: #fff;
 }
 
-.button:hover {
-    background-color: #000;
-}
 
 .footer {
     bottom: 0;
@@ -90,55 +93,6 @@ a.rest:hover {
 .footer_det h1,p,a{
     margin: 2px;
     color: #000;
-}
-
-.search_div{
-    margin-left: 30%;
-    margin-top: 2%;
-}
-.search {
-    padding: 8px;
-    width: 40%;
-    border: 2px solid #f2f2f2;
-    color: #fff;
-    border-radius: 10px;
-    background-color: transparent;
-}
-
-.search_button{
-    padding: 8px;
-    width: 10%;
-    border-radius: 10px;
-    border: none;
-    border: 2px solid #f2f2f2;
-    color: #fff;
-    background-color: transparent;
-}
-
-.search_button:hover {
-    background-color: #000;
-    border: 2px solid #000;
-}
-
-::placeholder{
-    color: #dbd7d7;
-    font-size: 14px;
-}
-
-button.Rest {
-    background-color: transparent;
-    padding: 10px;
-    border: 2px solid #fff;
-    color: white;
-    float: right;
-    margin: 2px;
-    border-radius: 6px;
-}
-
-button.Rest:hover {
-    background-color: papayawhip;
-    color: #000;
-    text-transform: uppercase;
 }
 
 .popup {
@@ -168,88 +122,34 @@ button.Rest:hover {
     bottom: 0%;
     visibility: hidden;
 }
-.popup img.close{
+
+/* Close button for the popup */
+.popup .close{
     background-color: transparent;
-    padding: 0px;
-    width: 8%;
-    height: 8%;
+    border: none;
+    color: #000;
     float: right;
     margin-top: 2%;
     margin-right: -5%;
-    box-shadow: none;
-    border-radius: 0%;
+    font-size: 30px;
 }
-.popup img.close:hover{
-    background-color: #d9534f;;
-    border-radius: 100%;
+.popup .close:hover{
+    color: #d9534f;
 }
+
+/* The photo on the popup */
 .popup img {
-    width: 200px;
-    height: 200px;
-    background-color: red;
-    margin-top: -100px;
-    border-radius: 100%;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+    background-color: gold;
+    padding: 2px;
+    width: 150px;
+    height: 150px;
+    margin-top: -75px;
+    border-radius: 10%;
 }
 .popup h2 {
     font-size: 38px;
     font-weight: 500;
     margin: 30px 0 10px;
-}
-
-.popup button {
-    width: 100%;
-    margin-top: 50px;
-    padding: 10px 0;
-    background-color:  #d9534f;
-    color: white;
-    border: 0;
-    outline: none;
-    font-size: 18px;
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 0px 5px 5px rgba(0,0,0,0.3);
-}
-
-.ret_div {
-    margin-top: 2%;
-    position: relative;
-}
-
-.return {
-    text-decoration: none;
-    color: #000;
-    border: 2px solid #f2f2f2;
-    padding: 10px;
-    border-radius: 10px;
-    color: white;
-    margin: 2p;
-}
-
-.return:hover {
-    color: #000;
-    background-color: papayawhip;
-    border-color: #fff;
-    text-transform: uppercase;   
-}
-
-.search_results {
-    padding: 25px;
-    width: 24%;
-    background-color: #fff;
-    border-radius: 6px;
-    top: 15%;
-    left: 45%;
-    position: absolute;
-    transform: translate(-50%, -50%)scale(0.1);
-    transition: transform 0.4s, top 0.4s;
-    visibility: hidden;
-}
-
-.open-search {
-    transform: translate(-50%, -50%) scale(1);
-    visibility: visible;
-    top: 29%;
 }
 
 .project {
@@ -347,74 +247,63 @@ button.Rest:hover {
     padding: 5px;
 }
 
+.media-close {
+    padding: 0;
+    display: none;
+}
+
 .serverico:hover {
     background-color: #000;
     border-radius: 80%;
     box-shadow: 0px 10px 5px rgba(0,0,0,0.3)
 }
 
-@media (max-width: 905px)
-{
-    .project{
-        text-align: center;
-    }
-    .card{
-        width: 90%;
-    }
-    .search_button{
-        width: 100px;
-        margin: 2px;
-    }
-    .search{
-        width: 60%;
-    }
-    .popup{
-        width: 50%;
-        background-color: #dbd7d7;
-    }
-    .popup img {
-        padding: 1px;
-        background-color: #dbd7d7;
-    }
-    .Text h1 {
-        font-size: 40px;
-    }
-    .Text p {
-        font-size: 20px;
-    }
-    .popup.home {
-        width: 60%;
-        background-color: #fff;
-    }
-}
 
-@media (max-width: 300px)
+@media (min-width: 300px) and (max-width: 720px)
 {
-    .popup.home {
-        width: 50%;
+    .nav-elements{
+        display: none;
+    }
+    .popup {
+        background-color: #fff;
+        padding: 10px;
+        width: 75%;
         height: 50%;
     }
-    .popup.home img {
-        height: 20%;
-        width:30%;
-        border-radius: 10px;
+    .popup img {
+        display: none;
     }
-    .popup.home h2 {
-        color:red;
-        font-size: 18px;
+    .popup p {
+        font-size: 10px;
     }
-    .popup.home p {
-        font-size: 8px;
+    .popup ul{
+        font-size: 10px;
     }
-    .popup.home ul{
-        font-size: 8px;
-        text-align: left;
-        margin-left: -20%;
-    }
-    .popup.home h4 {
+    .popup h4 {
         font-size: 12px;
     }
-    .popup.home button {
+    .popup .close{
+        display: none;
+    }
+    .media-close {
+        background-color: #d9534f;
+        color: #fff;
+        border-radius: 10px;
+        margin-bottom: -5%;
+        margin: 2%;
+        border: none;
+        width: 100%;
+        padding: 0;
+        display: block;
+    }
+    .hamburger {
+        background-color: transparent;
+        font-size: 20px;
+        border: none;
+        display: block;
+    }
+
+    .popup button {
         padding: 10px;
         font-size: 8px;
         margin-top: 2%;
@@ -424,45 +313,25 @@ button.Rest:hover {
     }
     .project {
         background-color: transparent;
+        display: block;
+        margin-left: 0;
     }
     .project h1 {
         color: #fff;
         font-size: 20px;
     }
+    .card p {
+        color: #fff;
+    }
     .card {
-        font-size: 8px;
-        transform: translate(-5%, 5%);
+        background-color: transparent;
+        color: #fff;
+        padding: 0;
+        display: block;
+        font-size: 18px;
+        width: 100%;
     }
-    .ret_div {
-        margin-top: 5%;
-        margin-left: 10%;
-    }
-    .ret_div a {
-        padding: 5px;
-        font-size: 10px;
-        transform: translate(-5%, 50%);
-    }
-    .search_div{
-        margin-top: 5%;
-        margin-left: 10%;
-    }
-    .search_div input{
-        padding: 2px;
-    }
-    ::placeholder {
-        font-size: 8px;
-    }
-    .search_div button {
-        padding: 4px;
-        width: 50px;
-        font-size: 10px;
-    }
-}
-
-@media (max-width: 1000px)
-{
-    .card{
-        margin: 5px;
-        box-shadow: none;
+    .project{
+        width: 99%;
     }
 }
