@@ -51,6 +51,7 @@ ul {
 }
 
 .Text {
+    color: #fff;
     position: absolute;
     top: 45%;
     left: 50%;
@@ -93,7 +94,7 @@ a.rest:hover {
     padding: 10px;
 }
 
-.footer_det h1,p,a{
+.footer_det h1,a{
     margin: 2px;
     color: #000;
 }
@@ -175,7 +176,7 @@ a.rest:hover {
 .card {
     padding: 40px;
     border-radius: 10px;
-    background-color: #dbd7d7;
+    background-color: #dbd7d785;
     width: 43%;
     text-align: center;
     display: inline-block;
@@ -314,27 +315,24 @@ a.rest:hover {
     .nav button {
         padding: 5px;
     }
-    .project {
-        background-color: transparent;
-        display: block;
-        margin-left: 0;
-    }
-    .project h1 {
-        color: #fff;
-        font-size: 20px;
-    }
     .card p {
         color: #fff;
     }
     .card {
         background-color: transparent;
         color: #fff;
-        padding: 0;
+        padding: 10px;
         display: block;
         font-size: 18px;
         width: 100%;
     }
-    .project{
-        width: 99%;
+    .footer {
+        margin-top: 30%;
+    }
+    .Text p,h1,h4 {
+        color: #fff;
+        margin: 10px;
+        padding: 10px;
+        font-size: 22px;
     }
 }
