@@ -144,6 +144,7 @@ a.rest:hover {
 /* The photo on the popup */
 .popup img {
     background-color: gold;
+    object-fit: cover;
     padding: 2px;
     width: 150px;
     height: 150px;
